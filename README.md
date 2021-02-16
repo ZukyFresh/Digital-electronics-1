@@ -6,7 +6,7 @@ https://github.com/ZukyFresh/Digital-electronics-1
 
 ## Verifications of basic Boolean postulates
 
-![Functions](img/functions.png)
+![Functions](Labs/01-gates/img/functions.png)
 
 ### Logical table
 
@@ -35,7 +35,7 @@ end architecture dataflow;
 
 ### Simulated time waveforms
 
-![Waveforms](img/waveforms.png)
+![Waveforms](Labs/01-gates/img/waveforms.png)
 
 ### EDA playground example link
 
@@ -45,7 +45,7 @@ https://www.edaplayground.com/x/fmSH
 
 ### Equations
 
-![Distributives](img/dlaws.png)
+![Distributives](Labs/01-gates/img/dlaws.png)
 
 ### VHDL code
 
@@ -63,7 +63,7 @@ end architecture dataflow;
 
 ### Simulated time waveforms
 
-![Waveforms02](img/waveforms02.png)
+![Waveforms02](Labs/01-gates/img/waveforms02.png)
 
 ### EDA playground example link
 
