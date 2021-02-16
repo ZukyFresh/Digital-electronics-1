@@ -49,7 +49,7 @@ https://www.edaplayground.com/x/fmSH
 
 ### Logical table
 
-| **z** | **y** |**x** | **x and y or x and z** | **x and (y or z)** | **(x or y) and (x or z)**  | **x or (y and z)**  |
+| **c** | **b** |**a** | **a and b or a and c** | **a and (b or c)** | **(a or b) and (a or c)**  | **a or (b and c)**  |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 0 | 0 | 1 | 0 | 0 | 1 | 1 |
