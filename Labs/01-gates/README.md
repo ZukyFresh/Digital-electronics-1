@@ -47,6 +47,19 @@ https://www.edaplayground.com/x/fmSH
 
 ![Distributives](img/dlaws.png)
 
+### Logical table
+
+| **z** | **y** |**x** | **x and y or x and z** | **x and (y or z)** | **(x or y) and (x or z)**  | **x or (y and z)**  |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 0 | 0 | 1 | 0 | 0 | 1 | 1 |
+| 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 0 | 1 | 1 | 1 | 1 | 1 | 1 |
+| 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 1 | 0 | 1 | 1 | 1 | 1 | 1 |
+| 1 | 1 | 0 | 0 | 0 | 1 | 1 |
+| 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+
 ### VHDL code
 
 ```vhdl
