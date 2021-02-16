@@ -1,58 +1,70 @@
 # Digital-electronics-1
+## gates-01
 
+### My github profile
+https://github.com/ZukyFresh/Digital-electronics-1
 
-##idk just messin around
+## Verifications of basic Boolean postulates
 
-**sto e to **
+![Functions](img/functions.png)
 
-```javascript
-function fancyAlert(arg) {
-  if(arg) {
-    $.facebox({div:'#foo'})
-  }
-}
+### Logical table
+
+| **c** | **b** |**a** | **f(c,b,a)** |
+| :-: | :-: | :-: | :-: |
+| 0 | 0 | 0 | 1 |
+| 0 | 0 | 1 | 1 |
+| 0 | 1 | 0 | 0 |
+| 0 | 1 | 1 | 0 |
+| 1 | 0 | 0 | 0 |
+| 1 | 0 | 1 | 1 |
+| 1 | 1 | 0 | 0 |
+| 1 | 1 | 1 | 0 |
+
+### Architecture body for basic gates in VHDL
+
+```vhdl
+architecture dataflow of gates is
+begin
+    f_o  <= ((not b_i) and a_i) or ((not c_i) and (not b_i));
+    fnand_o <= not (not (not b_i and a_i) and not(not b_i and not c_i));
+    fnor_o <= (not (b_i or not a_i)) or (not (c_i or b_i));
+
+end architecture dataflow;
 ```
 
-# This is an <h1> tag
-## This is an <h2> tag
-###### This is an <h6> tag
-  
-  *This text will be italic*
-_This will also be italic_
+### Simulated time waveforms
 
-**This text will be bold**
-__This will also be bold__
+![Waveforms](img/waveforms.png)
 
-_You **can** combine them_
+### EDA playground example link
 
+https://www.edaplayground.com/x/fmSH
 
-* Item 1
-* Item 2
-  * Item 2a
-  * Item 2b
-  
-  
-  1. Item 1
-1. Item 2
-1. Item 3
-   1. Item 3a
-   1. Item 3b
-   
-   ![GitHub Logo](/images/logo.png)
-Format: ![Alt Text](url)
+## Verification of Distributive laws
 
-As Kanye West said:
+### Equations
 
-> We're living the future so
-> the present is our past.
+![Distributives](img/dlaws.png)
 
+### VHDL code
 
-I think you should use an
-`<addr>` element here instead.
+```vhdl
+architecture dataflow of gates is
+begin
+    f1_o <= (a_i and b_i)or(a_i and c_i);
+	f2_o <= (a_i and (b_i or c_i));
+	f3_o <= (a_i or b_i) and (a_i or c_i);
+	f4_o <= a_i or (b_i and c_i);
 
+end architecture dataflow;
 
+```
 
-- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
-- [x] list syntax required (any unordered or ordered list supported)
-- [x] this is a complete item
-- [ ] this is an incomplete item
+### Simulated time waveforms
+
+![Waveforms02](img/waveforms02.png)
+
+### EDA playground example link
+
+https://www.edaplayground.com/x/t7nP
