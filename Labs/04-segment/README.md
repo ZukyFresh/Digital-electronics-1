@@ -99,7 +99,7 @@ end Behavioral;
 ```
 ### Waveforms screenshot 
 
-![waveform](img/04-segment/waveform01.png)
+![waveform](img/waveform01.png)
 
 ### VHDL source (`top.vhd`)
 
@@ -168,4 +168,4 @@ end Behavioral;
 
 ### Waveform screenshot
 
-![waveform](img/04-segment/waveform02.png)
+![waveform](img/waveform02.png)
