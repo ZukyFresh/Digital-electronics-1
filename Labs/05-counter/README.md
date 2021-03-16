@@ -84,7 +84,7 @@ end architecture testbench;
 
 ### Waveforms screenshots
 
-![Waveforms](/img/waveform.png)
+![Waveforms](img/waveform.png)
 
 ## Top level
 
@@ -164,4 +164,4 @@ end architecture Behavioral;
 
 ### Image of the top layer of both counters, ie a 4-bit bidirectional counter and 16-bit counter with a 10 ms time base 
 
-![Screenshot](/img/image.png)
+![Screenshot](img/image.png)
